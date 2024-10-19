@@ -1,0 +1,25 @@
+﻿<Window x:Class="FormWPF.SpisokWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormWPF"
+        mc:Ignorable="d"
+        Title="_2" Height="265" Width="545">
+    <Grid Margin="0,0,0,1">
+        <Label Content="Отработка списка" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введите имя:" HorizontalAlignment="Left" Margin="32,43,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Argument1TextBox" HorizontalAlignment="Left" Margin="111,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="91,91,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click"/>
+        <Label Content="Список имён" HorizontalAlignment="Left" Margin="304,48,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="NameList" BorderThickness="0" BorderBrush="Transparent" d:ItemsSource="{d:SampleData ItemCount=4}" Margin="257,74,103,60"/>
+        <Rectangle HorizontalAlignment="Left" Height="128" Margin="257,46,0,0" Stroke="Black" VerticalAlignment="Top" Width="176"/>
+        <Button Margin="433,159,35,32" Background="Transparent" BorderBrush="Transparent" Click="Button_Click1">
+            <Image Source="/free-icon-trash-bin-8568959.png" Width="27" Height="24"/>
+        </Button>
+        <Button Content="Проверить на символы" HorizontalAlignment="Left" Margin="111,154,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+
+
+
+    </Grid>
+</Window>

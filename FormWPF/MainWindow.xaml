@@ -1,0 +1,22 @@
+﻿<Window x:Class="FormWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="195" Width="446">
+    <Grid Margin="0,-14,0,-6">
+        <Label Content="Отработка Ввода/Вывода" HorizontalAlignment="Left" Margin="135,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Аргумент 1:" HorizontalAlignment="Left" Margin="32,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Аргумент 2:" HorizontalAlignment="Left" Margin="32,79,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Argument1TextBox" HorizontalAlignment="Left" Margin="111,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Argument2TextBox" HorizontalAlignment="Left" Margin="111,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Вычислить" HorizontalAlignment="Left" Margin="91,130,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="270,53,0,0" Stroke="Black" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Результат" HorizontalAlignment="Left" Margin="314,55,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="BlockPlus" HorizontalAlignment="Left" Margin="296,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock Name="BlockYmnoz" HorizontalAlignment="Left" Margin="296,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
